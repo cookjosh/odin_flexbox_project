@@ -3,6 +3,12 @@ body {
     flex-direction: column;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    display: inline;
+}
+
 .header, .content-one, .footer {
     background: #1F2937;
     color: white;
@@ -27,6 +33,12 @@ body {
     color: #d8d8da;
     font-weight: lighter;
     width: 375px;
+}
+
+.content-one {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 200px;
 }
 
 .registration-box {
@@ -62,27 +74,57 @@ body {
 .top-image {
     height: auto;
     max-width: 500px;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    display: inline;
-}
-
-
-
-.content-one {
-    display: flex;
-    justify-content: space-between;
-    padding: 100px 200px;
+    border-radius: 8px;
+    padding-left: 50px;
 }
 
 .content-two {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 100px 200px; 
+}
+
+.card-header {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    padding: 10px 0px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.whole-card {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 2px #3882F6;
+    border-style: solid;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.card-body {
+    text-align: center;
 }
 
 .content-three {
@@ -90,7 +132,7 @@ a {
     display: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 200px;
+    padding: 100px 300px;
 }
 
 .quote {
@@ -116,11 +158,45 @@ a {
     justify-content: center;
     align-items: center;
     padding: 50px;
+    border-radius: 8px;
+}
+
+.content-text {
+    flex-grow: 1;
+}
+
+#action-header {
+    font-size: 24px;
+    color: #F9FAF8;
+    padding-left: 50px;
+}
+
+#action-body {
+    font-size: 18px;
+    color: #E5E7EB;
+    padding-left: 50px;
+}
+
+.content-button {
+    padding-right: 100px;
+}
+
+.action-button {
+    background-color: #3882F6;
+    text-align: center;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
 }
 
 .footer-text {
     padding: 10px;
     align-content: center;
-    justify-content: center;
+    justify-content: left;
     text-align: center;
 }
